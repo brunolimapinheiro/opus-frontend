@@ -51,9 +51,9 @@ export default function ModalLogin({
             </S.PositionI>
 
             <S.conteiner>
-              <S.cx>
+              <S.CxLogin>
                 <S.H1>Login</S.H1>
-              </S.cx>
+              </S.CxLogin>
 
               <S.inputs>
                 <S.titulo type="text" placeholder="Email" />
@@ -92,7 +92,7 @@ export default function ModalLogin({
                         labelId="demo-simple-select-required-label"
                         id="demo-simple-select-required"
                         value={candidato}
-                        label="Tipo de Candidato *"
+                        label="Tipo de Candidato"
                         onChange={handleChange}
                       >
                         {/* <MenuItem value="">
