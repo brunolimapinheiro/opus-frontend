@@ -180,12 +180,19 @@ export const cx = Styled.div`
   /* height: 50px; */
   /* border: 1px solid black; */
   background: #ffffff;
+  font-size: 25px;
   width: 80%;
+  height: 60px;
   display: flex;
   align-items: center;
   border-radius: 7px;
   padding: 10px;
   margin: 10px auto;
+
+  @media(max-width:768px){
+    height: 50px;
+    font-size: 18px;
+  }
   
 `;
 
