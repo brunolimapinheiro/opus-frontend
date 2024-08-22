@@ -3,16 +3,16 @@ import { theme } from "../../styles/theme";
 
 export const Modal = Styled.div`  
   /* position: absolute; */
-  margin: 5% auto;
+  margin: 90px auto;
   /* top: 10%;
   left: 35%; */
   transform:translate(-50%,- 50%);
-  width: 50%;
-  /* height: 20%; */
+  width: 750px;
+  height: 500px;
   background: ${theme.colors.colorThree};
   border: 2px solid #000;
   box-shadow: 4px black;
-  padding:10px;
+  padding: 20px 5px;
   /* border: 1px solid black; */
 
   @media(max-width:768px){
@@ -26,7 +26,7 @@ export const Modal = Styled.div`
     background: ${theme.colors.colorThree};
     border: 2px solid #000;
     box-shadow: 4px black;
-    padding: 5px;
+    /* padding: 5px; */
   /* border: 1px solid black; */
     /* margin: auto;
     width: 50%
@@ -116,13 +116,13 @@ export const titulo = Styled.input`
 export const divEsquecerSenha = Styled.div`
   width: 160px;
   margin: 10px auto 1px;
-  margin-left: 73%;
+  margin-left: 68%;
   font-size: 18px;
   /* border: 1px solid violet; */
 
   @media(max-width:768px){
     width: 140px;
-    /* margin: 10px auto 20px; */
+    margin: 10px auto 20px;
     
     margin-left: 100px;
     font-size: 16px;
@@ -182,7 +182,7 @@ export const cx = Styled.div`
   background: #ffffff;
   font-size: 25px;
   width: 80%;
-  height: 60px;
+  height: 70px;
   display: flex;
   align-items: center;
   border-radius: 7px;
