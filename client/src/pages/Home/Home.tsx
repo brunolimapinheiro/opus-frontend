@@ -8,6 +8,7 @@ export default function Home() {
   const [open, setOpen] = useState(false);
   const [openForm, setOpenForm] = useState(false);
   const handleOpen = () => setOpen(!open);
+  const handleClose = () => setOpenForm(false);
   const handModalForm = () => {
     if (open) {
       setOpen(false);
@@ -25,7 +26,7 @@ export default function Home() {
         handModalForm={handModalForm}
       />
 
-      <ModalForm open={openForm} />
+      <ModalForm open={openForm} handleOpen={handleClose} />
 
       <Main />
     </>

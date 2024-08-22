@@ -9,11 +9,11 @@ interface ModalProps {
   // handModalForm: () => void;
 }
 
-export default function ModalForm({ 
+export default function ModalForm({
   handleOpen,
   open,
   // handModalForm,
- }: ModalProps) {
+}: ModalProps) {
   return (
     <>
       <Modal
@@ -23,7 +23,6 @@ export default function ModalForm({
       >
         <Box>
           <S.Modal>
-
             <S.PositionI>
               <FiX onClick={handleOpen} />
             </S.PositionI>
@@ -34,15 +33,14 @@ export default function ModalForm({
 
               <S.inputsForm>
                 <S.inputs>
-                  <S.titulo type="text" placeholder="Email" />
-
-                  <S.titulo type="text" placeholder="Senha" />
+                  <S.tituloTwo type="text" placeholder="Nome" />
+                  <S.tituloTwo type="text" placeholder="senha" />
                 </S.inputs>
-                <S.inputs>
+                <S.inputsTwo>
                   <S.titulo type="text" placeholder="data de nasciemento" />
 
                   <S.titulo type="text" placeholder="telefone" />
-                </S.inputs>
+                </S.inputsTwo>
               </S.inputsForm>
 
               <S.divTextarea>
