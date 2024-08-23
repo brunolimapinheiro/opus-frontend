@@ -49,21 +49,21 @@ export default function ModalForm({
 
               <S.inputsFormTwo>
                 <S.inputs>
-                  <S.titulo type="text" placeholder="Cargo" />
+                  <S.TituloExperiencia type="text" placeholder="Cargo" />
 
-                  <S.titulo type="text" placeholder="Formação" />
+                  <S.TituloExperiencia type="text" placeholder="Formação" />
                 </S.inputs>
 
                 <S.inputs>
-                  <S.titulo type="text" placeholder="Empresa" />
+                  <S.TituloExperiencia type="text" placeholder="Empresa" />
 
-                  <S.titulo type="text" placeholder="Instituição" />
+                  <S.TituloExperiencia type="text" placeholder="Instituição" />
                 </S.inputs>
 
                 <S.inputs>
-                  <S.titulo type="text" placeholder="Duração" />
+                  <S.TituloExperiencia type="text" placeholder="Duração" />
 
-                  <S.titulo type="text" placeholder="Duração" />
+                  <S.TituloExperiencia type="text" placeholder="Duração" />
                 </S.inputs>
 
                 <S.inputs>
@@ -73,7 +73,7 @@ export default function ModalForm({
               </S.inputsFormTwo>
 
               <S.cx>
-                <S.btnEntrar>Curriculo</S.btnEntrar>
+                <S.btnCurriculo>Curriculo</S.btnCurriculo>
               </S.cx>
               <S.cx>
                 <S.btnEntrar>Entrar</S.btnEntrar>
