@@ -1,19 +1,18 @@
-import * as S from "./stylesForm";
+import * as S from "./styledCadastre";
 import Modal from "@mui/material/Modal";
 import Box from "@mui/material/Box";
 import { FiX } from "react-icons/fi";
+import { MdCloudUpload } from "react-icons/md";
 
 interface ModalProps {
   handleOpen: () => void;
-  handOpenNext: () => void;
   open: boolean;
   // handModalForm: () => void;
 }
 
-export default function ModalForm({
+export default function ModalCadastre({
   handleOpen,
   open,
-  handOpenNext,
   // handModalForm,
 }: ModalProps) {
   return (
@@ -30,7 +29,7 @@ export default function ModalForm({
             </S.PositionI>
             <S.conteiner>
               <S.cx>
-                <S.H1>Formulario</S.H1>
+                <S.H1>Cadastro</S.H1>
               </S.cx>
 
               <S.inputsForm>
@@ -49,36 +48,12 @@ export default function ModalForm({
                 <S.inputText placeholder="sobre" />
               </S.divTextarea>
 
-              <S.inputsFormTwo>
-                <S.inputs>
-                  <S.TituloExperiencia type="text" placeholder="Cargo" />
-
-                  <S.TituloExperiencia type="text" placeholder="Formação" />
-                </S.inputs>
-
-                <S.inputs>
-                  <S.TituloExperiencia type="text" placeholder="Empresa" />
-
-                  <S.TituloExperiencia type="text" placeholder="Instituição" />
-                </S.inputs>
-
-                <S.inputs>
-                  <S.TituloExperiencia type="text" placeholder="Duração" />
-
-                  <S.TituloExperiencia type="text" placeholder="Duração" />
-                </S.inputs>
-
-                <S.inputs>
-                  <S.buttonAdd>+</S.buttonAdd>
-                  <S.buttonAdd>+</S.buttonAdd>
-                </S.inputs>
-              </S.inputsFormTwo>
+              <S.upload>
+                <MdCloudUpload />
+              </S.upload>
 
               <S.cx>
-                <S.btnCurriculo>Curriculo</S.btnCurriculo>
-              </S.cx>
-              <S.cx>
-                <S.btnEntrar onClick={handOpenNext}>Entrar</S.btnEntrar>
+                <S.btnEntrar>Entrar</S.btnEntrar>
               </S.cx>
             </S.conteiner>
           </S.Modal>
