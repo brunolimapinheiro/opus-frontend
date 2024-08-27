@@ -35,12 +35,11 @@ export default function ModalCadastre({
               <S.inputsForm>
                 <S.inputs>
                   <S.tituloTwo type="text" placeholder="Nome" />
-                  <S.tituloTwo type="text" placeholder="senha" />
+                  <S.tituloTwo type="text" placeholder="email" />
                 </S.inputs>
                 <S.inputsTwo>
-                  <S.titulo type="text" placeholder="data de nasciemento" />
-
-                  <S.titulo type="text" placeholder="telefone" />
+                  <S.tituloTwo type="text" placeholder="endereço" />
+                  <S.tituloTwo type="text" placeholder="telefone" />
                 </S.inputsTwo>
               </S.inputsForm>
 
@@ -49,12 +48,19 @@ export default function ModalCadastre({
               </S.divTextarea>
 
               <S.upload>
-                <MdCloudUpload />
+                <S.uploadIcon>
+                  <MdCloudUpload />
+                </S.uploadIcon>
+                <S.p>Upload Foto de Perfil</S.p>
               </S.upload>
+              <S.inputsPasswords>
+                <S.passwords type="text" placeholder="Senha" />
+                <S.passwords type="text" placeholder="Confirme sua senha" />
+              </S.inputsPasswords>
 
-              <S.cx>
-                <S.btnEntrar>Entrar</S.btnEntrar>
-              </S.cx>
+              <S.cxTwo>
+                <S.btnEntrar>Cadastrar</S.btnEntrar>
+              </S.cxTwo>
             </S.conteiner>
           </S.Modal>
         </Box>
