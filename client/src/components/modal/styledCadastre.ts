@@ -9,6 +9,7 @@ export const Modal = Styled.div`
   border: 2px solid #000;
   box-shadow: 4px black;
   padding: 20px 10px;
+  
 
 `;
 export const conteiner = Styled.div`
@@ -29,27 +30,23 @@ export const PositionI = Styled.div`
 export const cx = Styled.div`
   /* height: 50px; */
   /* border: 1px solid black; */
-  background: #ffffff;
   width: 300px;
-  height: 6vh;
+  height: 4vh;
   display: flex;
   align-items: center;
   border-radius: 7px;
-  padding: 4px;
-  margin: 7px auto;
-/* // <<<<<<< HEAD
-//   width:200px;
-//   height:40px;
-//   @media(max-width:1129px){
-//     width:50;
-//     height:40px;;
-//   }
-// ======= */
+  margin: 5px auto;
 
-  /* @media(max-width:768px){
-      width: 150px;
-    }
-   */
+`;
+export const cxTwo = Styled.div`
+  background:#ffff;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  border-radius: 7px;
+  margin: 10px auto;
+  padding:10px;
+
 `;
 export const H1 = Styled.h2`
   font-weight:bold;
@@ -61,11 +58,13 @@ export const inputs = Styled.div`
   /* border: 1px solid black; */
   display: flex;
   /* weight: 800px; */
-  margin: 12px;
+  margin: 10px;
   flex-direction: column;
   justify-content:center;
   align-items:center;
-
+  @media(max-width:765px){
+    margin: 2px;
+}
 `;
 
 export const tituloTwo = Styled.input`
@@ -76,11 +75,16 @@ export const tituloTwo = Styled.input`
   font-weight: bold;
   /* margin: 0px 10%; */
   /* font-size: 10px; */
-  margin: 10px 2px;
+  margin: 5px 2px;
   width: 30vw;
-  height: 45px;
+  height: 38px;
 
+  @media(max-width:765px){
+    width: 50vw;
+    height: 38px;
+}
 `;
+
 export const inputsTwo = Styled.div`
   margin: 12px;
   display: flex;
@@ -91,15 +95,46 @@ export const inputsTwo = Styled.div`
 
 `;
 
+export const inputsPasswords = Styled.div`
+  display: flex;
+  flex-direction: row;
+  gap: 8px; 
+  justify-content: space-around;
+  align-items: center;
+`;
+
+export const passwords = Styled.input`
+    width: 25vw;
+    height: 35px;
+    border-radius: 7px;
+    padding: 10px;
+
+`;
+
 export const upload = Styled.div`
-  width: 50vw;
-  margin: 20px auto;
+  width: 60vw;
+  margin: 10px auto;
   height: 25vh;
   border-radius: 10px;
   background:white;
   padding: 10px 0px 0px 10px;
   box-sizing: border-box;
+  text-align:center;
+  cursor:pointer;
 
+
+  @media(max-width:765px){
+    height: 18vh;
+}
+
+`;
+export const uploadIcon = Styled.div`
+  text-align:center;
+  font-size:60px;
+`;
+
+export const p = Styled.p`
+  font-weight:bold;
 
 `;
 
@@ -110,15 +145,10 @@ export const inputsForm = Styled.div`
   justify-content: center;
   align-items: center;
 
-`;
-
-export const titulo = Styled.input`
-  border-radius: 7px;
-  padding: 15px;
-  font-weight: bold;
-  margin: 10px 2px;
-  width: 30vw;
-  height:45px;
+@media(max-width:765px){
+  flex-direction: column;
+  gap: 0px; 
+}
 `;
 
 export const divTextarea = Styled.div`
@@ -126,12 +156,17 @@ export const divTextarea = Styled.div`
 `;
 
 export const inputText = Styled.input`
-  width: 50vw;
-  margin: auto;
+  width: 60vw;
+  margin-bottom: 20px;
+  margin-top:8px;
   height: 25vh;
   border-radius: 10px;
   padding: 10px 0px 0px 10px;
   box-sizing: border-box;
+
+  @media(max-width:765px){
+    height: 18vh;
+}
 
 `;
 
