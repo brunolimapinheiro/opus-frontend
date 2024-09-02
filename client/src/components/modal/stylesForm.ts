@@ -2,9 +2,9 @@ import Styled from "styled-components";
 import { theme } from "../../styles/theme";
 
 export const Modal = Styled.div`
-  margin: auto;
-  height: 100vh;
-  width: 80%;
+  margin: 75px auto 0px;
+  /* height: 100vh; */
+  width: 60%;
   background: ${theme.colors.colorThree};
   border: 2px solid #000;
   box-shadow: 4px black;
@@ -20,6 +20,7 @@ export const PositionI = Styled.div`
   float:right;
   color: #ffffff;
 `;
+
 export const cx = Styled.div`
   background: #ffffff;
   width: 300px;
@@ -30,11 +31,13 @@ export const cx = Styled.div`
   padding: 4px;
   margin: 7px auto;
 `;
+
 export const H1 = Styled.h2`
   font-weight:bold;
   margin: auto;
   
 `;
+
 export const inputs = Styled.div`
   display: flex;
   margin: 12px;
@@ -43,6 +46,7 @@ export const inputs = Styled.div`
   align-items:center;
 
 `;
+
 export const tituloTwo = Styled.input`
   border-radius: 7px;
   padding: 15px;
@@ -51,8 +55,8 @@ export const tituloTwo = Styled.input`
   width: 30vw;
   height: 45px;
 
-
 `;
+
 export const inputsTwo = Styled.div`
   margin: 12px;
   display: flex;
@@ -60,11 +64,7 @@ export const inputsTwo = Styled.div`
   justify-content:center;
   align-items:center;
 
-  @media(max-width:452px){
-    margin: 0px 10px 20px 10px;
-    gap:10px;
-    margin: 0px 5px 20px 5px;
-  } */
+
 
 `;
 
@@ -106,6 +106,7 @@ export const buttonAdd = Styled.button`
 export const divTextarea = Styled.div`
   text-align:center;
 `;
+
 export const inputText = Styled.input`
   width: 50vw;
   margin: auto;
