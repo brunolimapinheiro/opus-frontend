@@ -36,7 +36,7 @@ export default function ModalForm({
               <S.inputsForm>
                 <S.inputs>
                   <S.tituloTwo type="text" placeholder="Nome" />
-                  <S.tituloTwo type="text" placeholder="senha" />
+                  <S.tituloTwo type="text" placeholder="E-mail" />
                 </S.inputs>
                 <S.inputsTwo>
                   <S.titulo type="text" placeholder="data de nasciemento" />
