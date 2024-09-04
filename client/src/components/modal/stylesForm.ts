@@ -3,7 +3,7 @@ import { theme } from "../../styles/theme";
 
 export const Modal = Styled.div`  
   margin: auto;
-  margin-top: 90px;
+  margin-top: 50px;
   width: 1010px;
   background: ${theme.colors.colorThree};
   border: 2px solid #000;
@@ -60,7 +60,7 @@ export const inputs = Styled.div`
     flex-direction: column;
     justify-content:center;
     align-items:center;
-    width:95px;
+    width:100%;
 
   }  
 
@@ -111,6 +111,8 @@ export const inputsForm = Styled.div`
   gap: 5px; 
   justify-content: center;
   align-items: center;
+
+
   
 `;
 
@@ -187,6 +189,7 @@ export const btnCurriculo = Styled.p`
 `;
 
 export const btnEntrar = Styled.p`
+  font-weight: bold;
   margin: auto;
   font-size: 18px;
   color: ${theme.colors.colorThree};
