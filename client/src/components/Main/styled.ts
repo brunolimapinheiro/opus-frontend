@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { theme } from "../../styles/theme";
 
 export const Main = styled.main`
-  height: 80vh;
+  /* height: 80vh; */
 `;
 export const Div = styled.div`
   background: ${theme.colors.colorOne};

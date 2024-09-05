@@ -4,11 +4,11 @@ import { theme } from "../../styles/theme";
 export const Modal = Styled.div`
   margin: auto;
   margin-top: 40px;
-  width: 1010px;
+  width: 50%;
   background: ${theme.colors.colorThree};
   border: 2px solid #000;
   box-shadow: 4px black;
-  padding: 10px;
+  padding: 20px;
 
   @media(max-width: 768px){
     width: 350px;
@@ -104,7 +104,7 @@ export const tituloTwo = Styled.input`
 export const inputsTwo = Styled.div`
   /* border: 1px solid black; */
   width: 50%;
-  margin: 12px;
+  margin: 10px;
   display: flex;
   flex-direction: column;
   justify-content:center;
@@ -124,23 +124,25 @@ export const inputsPasswords = Styled.div`
 
 export const passwords = Styled.input`
   /* border: 1px solid black; */
-  width: 300px;
-  height: 35px;
+  margin: 10px;
+  width: 400px;
+  height: 40px;
   border-radius: 7px;
   padding: 15px;
+
 
 `;
 
 export const upload = Styled.div`
-  /* border: 1px solid black; */
-  width: 100%;
+  /* border: 1px solid violet; */
+  text-align:center;
+  width: 97%;
   margin: 10px auto;
-  height: 25vh;
+  height: 15vh;
   border-radius: 10px;
   background:white;
   padding: 10px 0px 0px 10px;
   box-sizing: border-box;
-  text-align:center;
   cursor:pointer;
 
 
@@ -175,15 +177,18 @@ export const inputsForm = Styled.div`
 `;
 
 export const divTextarea = Styled.div`
+  /* border: 1px solid violet; */
   text-align:center;
-  width: 100%;
+  margin: auto;
+  width: 97%;
 `;
 
 export const inputText = Styled.input`
+  /* border: 1px solid black; */
   width: 100%;
   margin-bottom: 20px;
   margin-top:8px;
-  height: 25vh;
+  height: 15vh;
   border-radius: 10px;
   padding: 10px 0px 0px 10px;
   box-sizing: border-box;

@@ -4,7 +4,7 @@ import { theme } from "../../styles/theme";
 export const Modal = Styled.div`  
   margin: auto;
   margin-top: 50px;
-  width: 1010px;
+  width: 950px;
   background: ${theme.colors.colorThree};
   border: 2px solid #000;
   box-shadow: 4px black;
@@ -17,7 +17,7 @@ export const Modal = Styled.div`
 `;
 
 export const conteiner = Styled.div`
-  margin: 15px;
+  /* margin: 15px; */
 
 `;
 
@@ -150,9 +150,9 @@ export const divTextarea = Styled.div`
 `;
 
 export const inputText = Styled.input`
-  width: 87%;
+  width: 90%;
   margin: auto;
-  height: 200px;
+  height: 15vh;
   border-radius: 10px;
   padding: 10px 0px 0px 10px;
   box-sizing: border-box;
