@@ -30,7 +30,7 @@ export default function ModalForm({
             </S.PositionI>
             <S.conteiner>
               <S.cx>
-                <S.H1>Formulario</S.H1>
+                <S.H1>Formulario do candidato</S.H1>
               </S.cx>
 
               <S.inputsForm>

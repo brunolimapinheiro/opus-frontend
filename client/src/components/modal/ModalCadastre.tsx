@@ -29,7 +29,7 @@ export default function ModalCadastre({
             </S.PositionI>
             <S.conteiner>
               <S.cx>
-                <S.H1>Cadastro</S.H1>
+                <S.H1>Cadastrar Empresa</S.H1>
               </S.cx>
 
               <S.inputsForm>

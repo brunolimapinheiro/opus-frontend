@@ -72,7 +72,7 @@ export default function Navbar({ handleOpen }: NavBarProps) {
 
           <S.Div>
             <S.StyledLink to="">Destaques</S.StyledLink>
-            <S.StyledLink to="">Vagas</S.StyledLink>
+            <S.StyledLink to={"/vagas"}>Vagas</S.StyledLink>
             <S.StyledLink to="">Sobre</S.StyledLink>
             <S.Button onClick={handleOpen}>entrar</S.Button>
           </S.Div>
