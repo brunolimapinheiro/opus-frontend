@@ -17,27 +17,19 @@ export const Modal = Styled.div`
 `;
 
 export const conteiner = Styled.div`
-  /* margin-top: 50%; */
-  /* top: -30%; */
-  /* margin: auto;
-  padding: 20% 10px; */
   margin: 15px;
-  /* border: 1px solid violet; */
+
 `;
 
 export const PositionI = Styled.div`
   cursor: pointer;
-  display:inline-block;
+  display: inline-block;
   float:right;
-  /* border: 1px solid black; */
-  /* margin-top: -2p?x; */
   color: #ffffff;
 `;
 
 export const cx = Styled.div`
   background: #ffffff;
-  /* height: 50px; */
-  /* border: 1px solid black; */
   width: 300px;
   height: 50px;
   display: flex;
@@ -49,7 +41,7 @@ export const cx = Styled.div`
 `;
 
 export const cxTwo = Styled.div`
-  /* border: 1px solid violet; */
+
   background:#ffff;
   width: 150px;
   display: flex;
@@ -65,14 +57,13 @@ export const cxTwo = Styled.div`
 export const H1 = Styled.h2`
   font-weight:bold;
   margin: auto;
-  /* border: 1px solid black; */
+
   
 `;
 export const inputs = Styled.div`
-  /* border: 1px solid black; */
+
   width: 50%;
   display: flex;
-  /* weight: 800px; */
   margin: 10px;
   flex-direction: column;
   justify-content: center;
@@ -84,16 +75,13 @@ export const inputs = Styled.div`
 `;
 
 export const tituloTwo = Styled.input`
-  /* border: 1px solid black; */
+
   border-radius: 7px;
-  /* width: 80%; */
   padding: 15px;
   font-weight: bold;
-  /* margin: 0px 10%; */
-  /* font-size: 10px; */
   margin: 5px 2px;
   width: 100%;
-  /* height: 38px; */
+
 
   @media(max-width:765px){
     width: 50vw;
@@ -102,13 +90,13 @@ export const tituloTwo = Styled.input`
 `;
 
 export const inputsTwo = Styled.div`
-  /* border: 1px solid black; */
+
   width: 50%;
   margin: 10px;
   display: flex;
   flex-direction: column;
-  justify-content:center;
-  align-items:center;
+  justify-content: center;
+  align-items: center;
 
 
 `;
