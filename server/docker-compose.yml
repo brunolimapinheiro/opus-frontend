@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  db:
+    image: mysql:latest
+    container_name: opus_db
+    restart: always
+    env_file:
+      - .env                             # Referência ao arquivo .env
+    ports:
+      - "3306:3306"                      # Porta padrão do MySQL
+    volumes:
+      - db_data:/var/lib/mysql           # Persistência de dados
+
+volumes:
+  db_data:
