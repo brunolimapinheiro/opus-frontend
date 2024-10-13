@@ -19,9 +19,10 @@ model candidate {
   password    String
   createdAt   DateTime     @default(now())
   updatedAt   DateTime     @updatedAt
-  contactInfo contactInfo   @relation(fields: [contactInfoId], references: [id])
+  contactInfo contactInfo   @relation(fields: [contactInfoId], references: [id], onDelete: Cascade)
   contactInfoId Int         @unique 
-  educations  education[]
+  educations  education[]  
+  isDeleted   Boolean      @default(false)
 }
 
 // Tabela de informações de contato
@@ -38,6 +39,6 @@ model education {
   formation   String
   experience  String
   curriculum  String
-  candidate   candidate @relation(fields: [candidateId], references: [id])
+  candidate   candidate @relation(fields: [candidateId], references: [id], onDelete: Cascade)
   candidateId Int
 }

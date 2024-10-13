@@ -27,7 +27,7 @@ async function main() {
       email: 'joao.silva@example.com',
       age: 25,
       about: 'Desenvolvedor Full Stack',
-      password: 'senha123',
+      password: '$2b$10$88jSg53qlK4T0cyDsqNR6eUn07qSyE2gcRKjjuANNDQqpmxaeDIsq',
       contactInfoId: contactInfo1.id, // Referência ao ContactInfo
     },
   });
@@ -38,7 +38,7 @@ async function main() {
       email: 'maria.oliveira@example.com',
       age: 30,
       about: 'Designer Gráfico',
-      password: 'senha456',
+      password: '$2b$10$88jSg53qlK4T0cyDsqNR6eUn07qSyE2gcRKjjuANNDQqpmxaeDIsq',
       contactInfoId: contactInfo2.id, // Referência ao ContactInfo
     },
   });
