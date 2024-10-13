@@ -2,11 +2,12 @@ import express from 'express';
 import 'express-async-errors';
 import cors from 'cors';
 import dotenv from 'dotenv';
+import router from './routes';
 
 dotenv.config();
 
 class App {
-    private app: express.Express;
+    public app: express.Express;
 
     constructor() {
         this.app = express();
@@ -28,8 +29,10 @@ class App {
 
     private routes(): void {
         this.app.get('/', (req, res) => {
-            res.status(200).json('Hello World!');
+            res.status(200).json({ message: 'Hello World!' });
         });
+
+        this.app.use(router);
     }
 
     public start(PORT: string | number): void {
@@ -39,4 +42,4 @@ class App {
     }
 }
 
-export default App;
+export { App };
