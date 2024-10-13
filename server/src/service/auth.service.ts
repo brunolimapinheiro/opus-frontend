@@ -1,16 +1,25 @@
 import AuthModel from '../model/auth.model';
+import { hashPassword } from '../config/bcrypt';
 
 class AuthService {
 
-  constructor(private model: AuthModel) {  }
+  private hashPassword: any;
+
+  constructor(private model: AuthModel) {
+    this.hashPassword = hashPassword;
+  }
 
   async login() {
     const result = await this.model.login();
     return result;
   }
 
-  async register() {
-    const result = await this.model.register();
+  async register(data: any) {
+    const { password } = data;
+
+    const hash = await this.hashPassword(password, 10);
+    const newData = { ...data, password: hash };
+    const result = await this.model.register(newData);
     return result;
   }
 

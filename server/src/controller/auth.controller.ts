@@ -1,10 +1,17 @@
 import { Request, Response } from 'express';
 import AuthService from '../service/auth.service';
+import { PrismaClient } from '@prisma/client';
 
 
 class AuthController {
 
-  constructor(private service: AuthService) {  }
+  private prisma: PrismaClient;
+
+  constructor(
+    private service: AuthService,
+  ) { 
+    this.prisma = new PrismaClient();
+   }
 
   async auth(req: Request, res: Response) {
     const result = await this.service.login();
@@ -12,7 +19,22 @@ class AuthController {
   }
 
   async store(req: Request, res: Response) {
-    const result = await this.service.register();
+    const { email } = req.body;
+    const data = req.body;
+
+    const candidate = await this.prisma.candidate.findUnique({
+      where: {
+        email,
+      },
+    }); 
+
+    if (candidate) {
+      return res.status(400).json({
+        error: 'Email já cadastrado!',
+      });
+    }
+
+    const result = await this.service.register(data);
     res.json(result);
   }
 
