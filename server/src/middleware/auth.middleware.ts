@@ -10,6 +10,7 @@ class AuthMiddleware {
     res: Response,
     next: express.NextFunction,
   ): Promise<void> {
+    
     const { name, email, phone, address, age, about, experience, formation, curriculum, password } = req.body;
 
     // Verificação dos campos obrigatórios
