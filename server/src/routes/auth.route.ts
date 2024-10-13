@@ -3,6 +3,7 @@ import AuthController from '../controller/auth.controller';
 import AuthService from '../service/auth.service';
 import AuthModel from '../model/auth.model';
 import AuthMiddleware from '../middleware/auth.middleware';
+import { handleUpload } from '../middleware/uploads';
 
 const model = new AuthModel();
 const service = new AuthService(model);
@@ -11,11 +12,12 @@ const middleware = new AuthMiddleware();
 
 const router = express.Router();
 
+
 router.post('/auth', async (req: Request, res: Response) => {
    await controller.auth(req, res);
 });
 
-router.post('/auth/register', middleware.registerValidate, async (req: Request, res: Response) => {
+router.post('/auth/register', (req, res, next) => handleUpload(req, res, next, 'curriculum'), middleware.registerValidate, async (req: Request, res: Response) => {
    await controller.store(req, res);
 });
 

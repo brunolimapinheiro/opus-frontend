@@ -25,6 +25,8 @@ async function main() {
     data: {
       name: 'João Silva',
       email: 'joao.silva@example.com',
+      age: 25,
+      about: 'Desenvolvedor Full Stack',
       password: 'senha123',
       contactInfoId: contactInfo1.id, // Referência ao ContactInfo
     },
@@ -34,6 +36,8 @@ async function main() {
     data: {
       name: 'Maria Oliveira',
       email: 'maria.oliveira@example.com',
+      age: 30,
+      about: 'Designer Gráfico',
       password: 'senha456',
       contactInfoId: contactInfo2.id, // Referência ao ContactInfo
     },

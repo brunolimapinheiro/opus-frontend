@@ -35,6 +35,8 @@ class AuthModel {
           name,
           email,
           password,
+          age:parseInt(age),
+          about,
           contactInfo: {
             connect: {
               id: contact.id,

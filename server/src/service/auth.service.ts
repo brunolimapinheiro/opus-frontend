@@ -19,7 +19,7 @@ class AuthService {
   async register(data: any) {
     const { password } = data;
 
-    const hash = await this.hashPassword(password, 10);
+    const hash = await this.hashPassword(password);
     const newData = { ...data, password: hash };
     const result = await this.model.register(newData);
     return result;
