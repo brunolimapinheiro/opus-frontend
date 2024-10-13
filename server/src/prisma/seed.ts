@@ -10,7 +10,7 @@ async function main() {
     data: {
       phone: '123456789',
       address: 'Rua das Flores, 123',
-    },
+    }, 
   });
 
   const contactInfo2 = await prisma.contactInfo.create({
