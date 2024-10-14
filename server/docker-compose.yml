@@ -22,24 +22,20 @@ services:
       dockerfile: DockerFile
     container_name: opus_backend
     restart: always
-    environment:
-      NODE_ENV: development
-      DB_HOST: db
-      DB_USER: ${MYSQL_USER}
-      DB_PASSWORD: ${MYSQL_PASSWORD}
-      DB_NAME: ${MYSQL_DATABASE}
+    env_file:
+      - .env
     ports:
       - "8000:8000"  # Porta do backend
     depends_on:
       - db  # Garante que o banco de dados seja iniciado antes do backend
     volumes:
-      - .:/usr/src/app
-      - /usr/src/app/node_modules
+      - .:/app
     networks:
       - opus-network
 
 volumes:
   db_data:
+
 
 networks:
   opus-network:

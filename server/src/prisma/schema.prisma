@@ -9,6 +9,7 @@ generator client {
   provider = "prisma-client-js"
 }
 
+
 // Tabela de candidatos
 model candidate {
   id          Int          @id @default(autoincrement())
