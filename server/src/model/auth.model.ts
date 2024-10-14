@@ -7,7 +7,7 @@ class AuthModel {
     this.prisma = new PrismaClient();
   }
 
-  // método de autenticação, falta implementar
+  // método de autenticação, falta revisar
   async login(email: string) {   
 
     const candidate = await this.prisma.candidate.findUnique({
