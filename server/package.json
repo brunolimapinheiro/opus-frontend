@@ -9,7 +9,7 @@
     "generate": "cd src && npx prisma generate",
     "coverage": "npm run reset && vitest --coverage",
     "seed": "ts-node src/seeds/seed-test.ts",
-    "reset": "cd src && npx prisma db push --force-reset && npm run seed"
+    "reset": "cd src && npx prisma db push --force-reset && npm run seed "
   },
   "keywords": [],
   "author": "",
