@@ -3,13 +3,13 @@
   "version": "1.0.0",
   "main": "src/main.js",
   "scripts": {
-    "test": "npm run reset && cd .. && vitest",
+    "test": "npm run reset && vitest",
     "dev": "nodemon src/main.ts",
     "start": "npm run dev",
     "generate": "cd src && npx prisma generate",
     "coverage": "npm run reset && vitest --coverage",
     "seed": "ts-node src/seeds/seed-test.ts",
-    "reset": "cd src && npx prisma db push --force-reset && npm run seed"
+    "reset": "cd src && npx prisma db push --force-reset && npm run seed "
   },
   "keywords": [],
   "author": "",

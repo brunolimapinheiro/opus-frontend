@@ -16,6 +16,7 @@ RUN npm install -g nodemon
 
 # Copiar todo o código-fonte
 COPY . .
+COPY .env .env
 
 # Expoe a porta
 EXPOSE 8000
