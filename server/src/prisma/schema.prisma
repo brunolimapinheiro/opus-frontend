@@ -2,7 +2,7 @@
 
 datasource db {
   provider = "mysql"
-  url      =  "mysql://root:opus@localhost:3306/opusDB" // Ta dando erro ao tentar passar pelo .env
+  url      = env("DATABASE_URL")
 }
 
 generator client {

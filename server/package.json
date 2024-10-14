@@ -4,9 +4,11 @@
   "main": "src/main.js",
   "scripts": {
     "test": "npm run reset && cd .. && vitest",
-    "start": "nodemon src/main.ts",
+    "dev": "nodemon src/main.ts",
+    "start": "npm run dev",
+    "generate": "cd src && npx prisma generate",
     "coverage": "npm run reset && vitest --coverage",
-    "seed": "ts-node src/prisma/seed.ts",
+    "seed": "ts-node src/seeds/seed-test.ts",
     "reset": "cd src && npx prisma db push --force-reset && npm run seed"
   },
   "keywords": [],
