@@ -4,7 +4,6 @@
 <code><img height="27" src="https://github.com/tandpfun/skill-icons/raw/main/icons/TypeScript.svg" alt="typescript"></code>
 <code><img height="27" src="https://github.com/tandpfun/skill-icons/raw/main/icons/Vite-Dark.svg" alt="vite"></code>
 <code><img height="27" src="https://github.com/tandpfun/skill-icons/raw/main/icons/MaterialUI-Dark.svg" alt="material-ui"></code>
-<code><img height="27" src="https://github.com/tandpfun/skill-icons/raw/main/icons/Docker.svg" alt="docker"></code>
 
 <div align="center">
 <h1>Opus Frontend</h1>
@@ -116,16 +115,11 @@ Esta documentação traz as informações necessárias para a utilização do fr
 | Vite               | Ferramenta de build rápida para frontend           |
 | Material UI        | Biblioteca de componentes React para design consistente |
 | Framer Motion      | Biblioteca para animações em React                 |
-| Docker             | Contêinerização                                     |
 | ESLint             | Ferramenta de linting para código JavaScript/TypeScript |
 | Prettier           | Formatação de código                                |
 
 ## Instalação
-O frontend do projeto está configurado para ser executado localmente usando Vite e Docker.
-
-É altamente recomendável não modificar o arquivo `docker-compose.yml` para evitar problemas com a execução do projeto. Igualmente, não altere os scripts de execução do projeto no `package.json`.
-
-Caso seja necessário alterar alguma configuração de porta, tenha certeza de fazer o bind corretamente no arquivo `docker-compose.yml` e nas configurações do frontend.
+O frontend do projeto está configurado para ser executado localmente usando Vite.
 
 ### Pré-requisitos
 - [Node.js](https://nodejs.org/) (versão 14 ou superior)
@@ -155,14 +149,6 @@ Caso seja necessário alterar alguma configuração de porta, tenha certeza de f
     ```
 
     Este comando iniciará o servidor de desenvolvimento com Hot Module Replacement (HMR) ativo.
-
-    Alternativamente, você pode usar Docker para rodar o frontend:
-    ```bash
-    docker-compose up # Roda o frontend em modo de visualização de logs
-    docker-compose up -d # Roda o frontend em modo de background
-    ```
-
-    O Docker irá baixar as imagens e criar os containers automaticamente.
 
 5. **Acessar o projeto:**
     Abra o navegador e vá para `http://localhost:3000` (ou a porta configurada) para ver o frontend em execução.
