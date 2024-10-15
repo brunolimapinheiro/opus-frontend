@@ -64,6 +64,30 @@ Documentação oficial do projeto "Opus", uma plataforma responsável por conect
       </a>
     </td>
     <td align="center">
+      <a href="https://github.com/hugoamadio">
+        <img src="https://avatars.githubusercontent.com/u/146294243?v=4" width="100px;" alt="Foto do Hugo Amadio no GitHub"/><br>
+        <sub>
+          <b>Hugo Amadio</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/jorgejesuscardoso">
+        <img src="https://avatars.githubusercontent.com/u/133919477?v=4" width="100px;" alt="Foto do Jorge Jesus no GitHub"/><br>
+        <sub>
+          <b>Jorge Jesus</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/Mtmozart">
+        <img src="https://avatars.githubusercontent.com/u/108758897?v=4" width="100px;" alt="Foto do Matheus Mozart no GitHub"/><br>
+        <sub>
+          <b>Matheus Mozart</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
       <a href="https://github.com/JociS4">
         <img src="https://avatars.githubusercontent.com/u/107800194?v=4" width="100px;" alt="Foto do Jociel Andrade no GitHub"/><br>
         <sub>
@@ -92,7 +116,7 @@ Documentação oficial do projeto "Opus", uma plataforma responsável por conect
 
 
 ## Contact
-For any inquiries or feedback, please contact the Scrum Master: [ruanvictorp22111@gmail.com](ruanvictorp22111@gmail.com).
+For any inquiries or feedback, please contact the community: [codewarriorsdevs@gmail.com](codewarriorsdevs@gmail.com).
 
 Thanks! :)
 </div>
