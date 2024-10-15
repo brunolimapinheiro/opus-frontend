@@ -2,8 +2,8 @@
 
 <code><img height="27" src="https://github.com/tandpfun/skill-icons/raw/main/icons/React-Dark.svg" alt="react"></code>
 <code><img height="27" src="https://github.com/tandpfun/skill-icons/raw/main/icons/TypeScript.svg" alt="typescript"></code>
-<code><img height="27" src="https://github.com/tandpfun/skill-icons/raw/main/icons/Vite.svg" alt="vite"></code>
-<code><img height="27" src="https://github.com/tandpfun/skill-icons/raw/main/icons/MaterialUI.svg" alt="material-ui"></code>
+<code><img height="27" src="https://github.com/tandpfun/skill-icons/raw/main/icons/Vite-Dark.svg" alt="vite"></code>
+<code><img height="27" src="https://github.com/tandpfun/skill-icons/raw/main/icons/MaterialUI-Dark.svg" alt="material-ui"></code>
 <code><img height="27" src="https://github.com/tandpfun/skill-icons/raw/main/icons/Docker.svg" alt="docker"></code>
 
 <div align="center">
