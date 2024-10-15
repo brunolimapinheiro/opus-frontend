@@ -2,36 +2,22 @@
 
 <code><img height="27" src="https://github.com/tandpfun/skill-icons/raw/main/icons/React-Dark.svg" alt="react"></code>
 <code><img height="27" src="https://github.com/tandpfun/skill-icons/raw/main/icons/TypeScript.svg" alt="typescript"></code>
-<code><img height="27" src="https://github.com/tandpfun/skill-icons/raw/main/icons/NodeJS-Dark.svg" alt="nodejs"></code>
-<code><img height="27" src="https://github.com/tandpfun/skill-icons/raw/main/icons/ExpressJS-Dark.svg" alt="expressjs"></code>
-<code><img height="27" src="https://github.com/tandpfun/skill-icons/raw/main/icons/MongoDB.svg" alt="mongodb"></code>
+<code><img height="27" src="https://github.com/tandpfun/skill-icons/raw/main/icons/Vite.svg" alt="vite"></code>
+<code><img height="27" src="https://github.com/tandpfun/skill-icons/raw/main/icons/MaterialUI.svg" alt="material-ui"></code>
+<code><img height="27" src="https://github.com/tandpfun/skill-icons/raw/main/icons/Docker.svg" alt="docker"></code>
 
 <div align="center">
-<h1>Opus</h1>
-Documentação oficial do projeto "Opus", uma plataforma responsável por conectar candidatos a empresas e serviços da região de Pedro II - PI.
+<h1>Opus Frontend</h1>
+Documentação oficial do projeto "Opus Frontend", a interface responsável por conectar candidatos a empresas e serviços da região de Pedro II - PI.
 <br></br>
 
-<a href="https://opusdoc.vercel.app"><strong>Explore the docs »</strong></a>
+<a href="https://opus-frontend-docs.vercel.app"><strong>Explore the docs »</strong></a>
 <br></br>
 
-<img width="100%" src="https://i.ibb.co/M1r1YSq/Group-2.png">
+<img width="100%" src="https://i.ibb.co/M1r1YSq/Group-2.png" alt="Opus Frontend Screenshot">
 </div>
 
 <div align="left">
-<!-- TABLE OF CONTENTS -->
-<!-- <details open="open">
-  <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
-  <ol>
-      <li><a>Home</a></li>
-      <li><a>Introdução</a></li>
-      <li><a>Levantamento de Requisitos</a></li>
-      <li><a>Representação Arquitetural</a></li>
-      <li><a>Guia de Estilos</a></li>
-      <li><a>Linguagens e Tecnologias</a></li>
-      <li><a>Cronogramas</a></li>
-      <li><a>Planos de Risco</a></li>
-  </ol>
-</details> -->
 
 ## Em Desenvolvimento... ⚠
 
@@ -113,10 +99,100 @@ Documentação oficial do projeto "Opus", uma plataforma responsável por conect
     </td>
   </tr>
 </table>
-
-
-## Contact
-For any inquiries or feedback, please contact the community: [codewarriorsdevs@gmail.com](codewarriorsdevs@gmail.com).
-
-Thanks! :)
 </div>
+</div>
+
+<br>
+
+# Documentação
+Esta documentação traz as informações necessárias para a utilização do frontend do projeto Opus. Nela você encontrará informações sobre a estrutura do projeto, as tecnologias utilizadas, os comandos para rodar o projeto e os testes.
+
+### Tecnologias Utilizadas 
+
+| Tecnologia         | Descrição                                         |
+|--------------------|---------------------------------------------------|
+| React              | Biblioteca JavaScript para construção de interfaces de usuário |
+| TypeScript         | Superset de JavaScript com tipagem estática        |
+| Vite               | Ferramenta de build rápida para frontend           |
+| Material UI        | Biblioteca de componentes React para design consistente |
+| Framer Motion      | Biblioteca para animações em React                 |
+| Docker             | Contêinerização                                     |
+| ESLint             | Ferramenta de linting para código JavaScript/TypeScript |
+| Prettier           | Formatação de código                                |
+
+## Instalação
+O frontend do projeto está configurado para ser executado localmente usando Vite e Docker.
+
+É altamente recomendável não modificar o arquivo `docker-compose.yml` para evitar problemas com a execução do projeto. Igualmente, não altere os scripts de execução do projeto no `package.json`.
+
+Caso seja necessário alterar alguma configuração de porta, tenha certeza de fazer o bind corretamente no arquivo `docker-compose.yml` e nas configurações do frontend.
+
+### Pré-requisitos
+- [Node.js](https://nodejs.org/) (versão 14 ou superior)
+- [Git](https://git-scm.com/)
+
+### Comandos para rodar o projeto
+
+1. **Clone o repositório:**
+    ```bash
+    git clone https://github.com/seu-usuario/front-end.git
+    cd front-end
+    ```
+
+2. **Instale as dependências do projeto:**
+    ```bash
+    npm install
+    ```
+
+    Essas dependências são locais e são necessárias para poder fazer edições no projeto.
+
+3. **Configuração do ambiente:**
+    Crie um arquivo `.env` na raiz do projeto com as variáveis de ambiente necessárias. Um exemplo de `.env` pode ser encontrado no arquivo `.env.example`.
+
+4. **Rodar o projeto:**
+    ```bash
+    npm run dev
+    ```
+
+    Este comando iniciará o servidor de desenvolvimento com Hot Module Replacement (HMR) ativo.
+
+    Alternativamente, você pode usar Docker para rodar o frontend:
+    ```bash
+    docker-compose up # Roda o frontend em modo de visualização de logs
+    docker-compose up -d # Roda o frontend em modo de background
+    ```
+
+    O Docker irá baixar as imagens e criar os containers automaticamente.
+
+5. **Acessar o projeto:**
+    Abra o navegador e vá para `http://localhost:3000` (ou a porta configurada) para ver o frontend em execução.
+
+### Scripts Disponíveis
+
+No `package.json`, os seguintes scripts estão disponíveis:
+
+- `npm run dev`: Inicia o servidor de desenvolvimento.
+- `npm run build`: Cria uma versão otimizada para produção.
+- `npm run preview`: Serve a versão de produção localmente.
+- `npm run test`: Executa os testes.
+- `npm run lint`: Executa o ESLint para verificar o código.
+- `npm run format`: Formata o código usando Prettier.
+
+### Adicionando Material UI, React Icons e Framer Motion
+
+Para adicionar as bibliotecas usadas no projeto, os seguintes comandos foram utilizados:
+
+- **Material UI:**
+    ```bash
+    npm install @mui/material @emotion/react @emotion/styled
+    ```
+
+- **Framer Motion:**
+    ```bash
+    npm install framer-motion
+    ```
+
+## Estrutura do Projeto
+
+A estrutura do projeto segue as melhores práticas para aplicações React com TypeScript e Vite, organizada para facilitar a manutenção e escalabilidade.
+
