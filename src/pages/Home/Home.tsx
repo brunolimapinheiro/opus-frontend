@@ -4,6 +4,7 @@ import { useState } from "react";
 import ModalLogin from "../../components/modal/Modal";
 import ModalForm from "../../components/modal/ModalForm";
 import ModalCadastre from "../../components/modal/ModalCadastre";
+import { About } from "../about/about";
 
 export default function Home() {
   const [open, setOpen] = useState(false);
@@ -42,6 +43,7 @@ export default function Home() {
       <ModalCadastre open={openCadastre} handleOpen={handleClose} />
 
       <Main />
+      <About/>
     </>
   );
 }
